@@ -3,9 +3,16 @@
 body {
     background: image_url('crossline-dots');
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    font-weight: 200;
 }
 
 .navbar {
     background: image_url('beige-tiles');
     box-shadow: 0px 1px 3px #222222
+}
+
+.navbar-inverse a.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100
+    color: white;
 }
