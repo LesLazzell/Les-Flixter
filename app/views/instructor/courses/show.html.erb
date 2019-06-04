@@ -11,9 +11,10 @@
       }
     });
   });
-</script>
+  // $(function() {
+  //   $('.sections li').hide('slow');
+  // });
 
-<script>
   $(function() {
     $('.sections').sortable({
       update: function( event, ui ) {
@@ -42,6 +43,7 @@
     </div>
 
     <ul>
+      <ul class="sections">
       <% current_course.sections.rank(:row_order).each do |section| %>
         <li data-update-url="<%= instructor_section_path(section) %>">
             <%= section.title %>
@@ -57,7 +59,8 @@
             </ul>
             <br class="clr" />
         </li>
-    <% end %>
-  </ul>
+      </ul>
+      <% end %>
+    </ul>
 
 </div>
